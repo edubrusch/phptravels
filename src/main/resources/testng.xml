@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PHP travels test suite">
+  <test name="Login">
+    <classes>
+      <class name="br.com.eduardo.phptravels.login.LoginTests" />      
+    </classes>
+  </test>  
+</suite>
