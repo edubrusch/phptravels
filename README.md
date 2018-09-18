@@ -1,6 +1,6 @@
 # About phptravels
 
-Demonstration of software testng automation using selenium, by Eduardo Brusch
+Demonstration of software testing automation using Selenium, TestNG and Java, by Eduardo Brusch
 
 # Setup
 
