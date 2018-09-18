@@ -1,11 +1,10 @@
-# phptravels
+# About phptravels
 
+Demonstration of software testng automation using selenium, by Eduardo Brusch
 
-Demo travel portal test automation using selenium By Eduardo Brusch
+# Setup
 
-Setup:
-
--jdk 1.8 (ode compliance set to Java 1.7);
+-jdk 1.7
 
 -maven 3.5 +;
 
@@ -13,7 +12,8 @@ Setup:
 
 -Chrome 62 +.
 
-Running
+
+# Running 
 
 -After cloning the project, download the latest google driver, available at: https://chromedriver.storage.googleapis.com/index.html;
 
@@ -25,4 +25,8 @@ Running
 
 -You can run the project using maven, through the command "mvn clean test";
 
--Alternatively, if you have the Tesng eclipse plugin, just create a new Run Configuration.
+-Alternatively, if you have the Tesng eclipse plugin, just create a new Run Configuration, running the test suite located in the resources folder.
+
+-After running the test, it's possible to check out all the steps executed in the file ${basedir}/test-output/emailable-report.html, created by testNG.
+
+-The steps can show also on the console. To get steps in the console output, please open the cfg.properties file and set "logtoConsole" to true. 

@@ -10,6 +10,7 @@ public class LoginPage extends Pages {
 	private By fldNmEmail = By.name("username");
 	private By fldNmPassword = By.name("password");
 	private By btXpLogin = By.xpath("//button[@type='submit']");
+	private By lbXPErrorMessage = By.xpath("//div[@class='alert alert-danger']"); 
 
 	public LoginPage(WebDriver someDriver) {
 		super(someDriver);		
@@ -26,5 +27,9 @@ public class LoginPage extends Pages {
 	
 	public void fillPassword(String content) {
 		fillField(fldNmPassword, "password", content);		
+	}
+
+	public String getFailureMessage() {
+		return getElementText(lbXPErrorMessage);	
 	}	
 }

@@ -65,7 +65,7 @@ public class Pages {
 	protected boolean isElementPresent(By locator) {
 		boolean  present = false;				
 		try {
-			present = driver.findElement(locator) == null;			
+			present = !(driver.findElement(locator) == null);			
 		}catch(NoSuchElementException | WebDriverException ex) {
 			present = false;
 		}
@@ -83,19 +83,19 @@ public class Pages {
 	}
 	
 	protected void clickButton(By button, String buttonName) {
-		String message = String.format("click button %s.", buttonName);
+		String message = String.format("Click button: %s.", buttonName);
 		driver.findElement(button).click();
 		ReportUtils.log(message);
 	}	
 	
 	protected void clickLink(By link, String buttonName) {
-		String message = String.format("click link %s.", buttonName);
+		String message = String.format("Click link: %s.", buttonName);
 		driver.findElement(link).click();
 		ReportUtils.log(message);
 	}	
 	
 	protected void genericClick(WebElement element, String description) {
-		String message = String.format("click item on the screen: %s.", description);
+		String message = String.format("Click item on the screen: %s.", description);
 		element.click();
 		ReportUtils.log(message);
 	}
