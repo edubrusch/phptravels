@@ -21,7 +21,7 @@ Demonstration of software testing automation using Selenium, TestNG and Java, by
 
 -Open Windows command prompt and go to the project folder;
 
--Run maven to download all needed libraries "mvn clean compile";
+-Run maven to download all needed libraries using the command "mvn clean compile";
 
 -You can run the project using maven, through the command "mvn clean test";
 
@@ -29,4 +29,4 @@ Demonstration of software testing automation using Selenium, TestNG and Java, by
 
 -After running the test, it's possible to check out all the steps executed in the file ${basedir}/test-output/emailable-report.html, created by testNG.
 
--The steps can show also on the console. To get steps in the console output, please open the cfg.properties file and set "logtoConsole" to true. 
+-The steps can be also shown on the console. To get steps in the console output, please open the cfg.properties file and set "logtoConsole" to true. 
